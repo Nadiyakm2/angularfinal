@@ -1,0 +1,19 @@
+.nav-link {
+    color: rgb(78, 78, 78); /* Default link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-link:hover {
+    color: #96733c; /* Change color on hover */
+  }s
+  
+  .nav-link.active {
+    color: white; /* Change to white when active */
+  }
+  
+  nav {
+    background-color: rgb(246, 164, 58); /* Navbar background color */
+  }
+  .navbar-brand b {
+    color: #54473d;  /* Lighter grey */
+  }

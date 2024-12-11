@@ -1,0 +1,7 @@
+/* Set the background color for the entire app */
+:host {
+    display: block;
+    background-color: #fbff94; /* Your desired background color */
+    min-height: 100vh; /* Ensure it covers the full height */
+  }
+ 

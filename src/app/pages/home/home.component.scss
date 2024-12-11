@@ -1,0 +1,92 @@
+.carousel-item img {
+  width: 100%; /* Ensure images take up the full width */
+  max-height: 700px; /* Set a max height for uniformity */
+  object-fit: cover; /* Maintain aspect ratio and crop excess */
+  border-radius: 15px; /* Add rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for a subtle 3D effect */
+  margin: 0 auto; /* Center the image */
+}
+
+.carousel-caption {
+  display: block; /* Ensure the caption is visible */
+  background-color: rgba(120, 112, 112, 0.5); /* Dark background for readability */
+  color: white; /* Contrast text color */
+  padding: 15px;
+  width: 100%; /* Stretch across the bottom of the carousel */
+  position: absolute; /* Pin to the bottom */
+  bottom: 0; /* Align to bottom of the carousel */
+  left: 0;
+  z-index: 10; /* Ensure it’s on top of the image */
+  text-align: center; /* Center-align text */
+}
+
+.carousel-caption h5 {
+  font-size: 2rem; /* Large text for the title */
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem; /* Adjusted text size for readability */
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+      max-height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .carousel-caption h5 {
+      font-size: 1.5rem; /* Adjust title size for mobile screens */
+  }
+
+  .carousel-caption p {
+      font-size: 1rem; /* Adjust description size for mobile screens */
+  }
+
+  .carousel-caption {
+      padding: 10px; /* Reduce padding for smaller screens */
+      display: block !important; /* Force display for captions on mobile */
+  }
+}
+
+
+
+/* Ensure all cards have the same size and spacing */
+.card {
+  width: 18rem;
+  margin: 10px; /* Spacing between cards */
+}
+
+.card-img-top {
+  height: 200px; /* Adjust height of the image */
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1em;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Customize button color */
+  border-color: #007bff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Spread out the cards */
+}
+
+.col {
+  flex: 0 0 18rem; /* Ensure each card has the same width */
+}
